@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Blackjack (21)</title>
+    <link rel="stylesheet" type="text/css" href="/tranformation.css"/>
+</head>
+<body>
+    <div class="table">
+        <div class="card card--red">
+            <div class="avers">
+                <span>2&nbsp;&hearts;</span>
+                <span>2&nbsp;&hearts;</span>
+            </div>
+            <div class="revers">
+                <p>××××××××××××</p>
+                <p><b>Ferd. Piatnik</b></p>
+                <p><small>a synové</small></p>
+                <p>×××××××××××××</p>
+            </div>
+        </div>
+        <div class="card card">
+            <div class="avers">
+                <span>2&nbsp;&spades;</span>
+                <span>2&nbsp;&spades;</span>
+            </div>
+            <div class="revers">
+                <p>××××××××××××</p>
+                <p><b>Ferd. Piatnik</b></p>
+                <p><small>a synové</small></p>
+                <p>×××××××××××××</p>
+            </div>
+        </div>
+
+        <div class="card card--red">
+            <div class="avers">
+                <span>2&nbsp;&diams;</span>
+                <span>2&nbsp;&diams;</span>
+            </div>
+            <div class="revers">
+                <p>××××××××××××</p>
+                <p><b>Ferd. Piatnik</b></p>
+                <p><small>a synové</small></p>
+                <p>×××××××××××××</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="avers">
+                <span>2&nbsp;&clubs;</span>
+                <span>2&nbsp;&clubs;</span>
+            </div>
+            <div class="revers">
+                <p>××××××××××××</p>
+                <p><b>Ferd. Piatnik</b></p>
+                <p><small>a synové</small></p>
+                <p>×××××××××××××</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        [].forEach.call(document.querySelectorAll('.card'), function(el) {
+            el.addEventListener('click', function() {
+                this.classList.toggle('set');
+            });
+        });
+    </script>
+
+</body>
+</html>
